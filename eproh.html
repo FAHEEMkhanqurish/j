@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <style>
+        nav {
+            background-color: #575353;
+
+
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+ .navbar {
+            background-color: transparent !important;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Navbar style when scrolled */
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.7) !important; /* Half transparent black */
+        }
+         body {
+            height: 200vh;
+            background: linear-gradient(to bottom, #ffffff, #3e64af);
+            color: white;
+        }
+        
+
+
+
+
+        
+    </style>
+    <!-- <h1 class="logo-heading">
+        <a href="#Origami">
+            <span class="sr-only">Origami <img src="img/origami.png" alt="Erorr" width="50px" height="60px"></span>
+        </a>
+    </h1> -->
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-red sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <span class="sr-only">
+                    <h1>Origami <img src="img/origami.png" alt="Erorr" width="50px" height="60px"></h1>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="designsDropdown" role="button"
+                            data-bs-toggle="dropdown">Designs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#kids">Easy for Kids</a></li>
+                            <li><a class="dropdown-item" href="#elders">Complex for Elders</a></li>
+                            <li><a class="dropdown-item" href="#categories">Categories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Design Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#animal" class="btn "> Animal</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Birds</a></li>
+                            <li><a class="dropdown-item" href="#">Flowers</a></li>
+                            <li><a class="dropdown-item" href="#">Faces</a></li>
+                            <li><a class="dropdown-item" href="#">Objects</a></li>
+                            <li><a class="dropdown-item" href="#">Insects</a></li>
+                            <li><a class="dropdown-item" href="#">Sea Creatures</a></li>
+                            <li><a class="dropdown-item" href="#">Stars & Geometric</a></li>
+                            <li><a class="dropdown-item" href="#">Vehicles</a></li> -->
+                            <li><a href="#Birds" class="btn "> Birds</a></li>
+                            <li><a href="#Flowers" class="btn "> Flowers</a></li>
+                            <li><a href="#Faces" class="btn "> Faces</a></li>
+                            <li><a href="#Insects" class="btn "> Insects</a></li>
+                            <li><a href="#Decor" class="btn "> Decor</a></li>
+                            <li><a href="#Boats" class="btn "> Boats</a></li>
+                            <li><a href="#Dragons" class="btn "> Dragons</a></li>
+                            <li><a href="#Boxes" class="btn ">Boxes</a></li>
+                            <li><a href="#Stars" class="btn "> Stars</a></li>
+                            <li><a href="#object" class="btn "> Object</a></li>
+                            <li><a href="#moon" class="btn "> Moon</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg bg-body-red sticky-top">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Origami</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Easy for Kids</a></li>
+                            <li><a class="dropdown-item" href="#">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="#">Complex Models</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Design Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                            <li><a class="dropdown-item" href="#">Birds</a></li>
+                            <li><a class="dropdown-item" href="#">Flowers</a></li>
+                            <li><a class="dropdown-item" href="#">Faces</a></li>
+                            <li><a class="dropdown-item" href="#">Objects</a></li>
+                            <li><a class="dropdown-item" href="#">Insects</a></li>
+                            <li><a class="dropdown-item" href="#">Sea Creatures</a></li>
+                            <li><a class="dropdown-item" href="#">Stars & Geometric</a></li>
+                            <li><a class="dropdown-item" href="#">Vehicles</a></li>
+                            <li><a class="dropdown-item" href="#">Fantasy Creatures</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li> -->
+    <!-- </ul>
+    </div>
+    </div>
+    </nav> -->
+    <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/grow-me/v1709338223/yrzedstznoqqqd7f8ddy.jpg" class="d-block w-100"
+                    alt="Erorr" width="90%" height="400px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://origami.me/wp-content/uploads/2025/04/easy-origami-dragon.jpg" class="d-block w-100"
+                    alt="Erorr" width="100%" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://origami.me/wp-content/uploads/2025/03/easy-origami-butterfly-1.jpg"
+                    class="d-block w-100" alt="Erorr" width="100%" height="500px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+
+
+    <!-- Slider -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://origami.me/wp-content/uploads/2024/10/origami-dolphins-1024x576.jpg"
+                    class="d-block w-100" alt="Slide 1" width="100%" height="300px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://origami.me/wp-content/uploads/2023/10/origami-goldfish-homepage-1-1024x505.png"
+                    class="d-block w-100" alt="Slide 2" width="100%" height="300px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://origami.me/wp-content/uploads/2025/05/easy-origami-bat-1.jpg"
+                    class="d-block w-100" alt="Slide 3" width="100%" height="300px">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+
+
+    <head>
+        <h2>Welcome to Origami</h2>
+
+        <p>Our mission is simple: to share our love for origami, inspiring you to explore its unique charm and endless
+            possibilities.
+
+            We believe origami is more than just folding. It’s about connection. It’s a collaborative art where anyone
+            can participate by recreating the designs of talented artists, connecting creativity across generations and
+            cultures.
+
+            Whether you’re here to learn your first fold or to discover new inspiration, we’re here for you. Our
+            tutorials, galleries, and collaborations are designed to make origami fun and accessible.
+
+            Our team works hand-in-hand with talented origami artists from around the world, sharing their creations
+            with care. By supporting their craft, we’re helping to bring more amazing designs to folders like you.
+
+            So, take a moment for yourself. Pick a design that speaks to you, and let’s start folding together! </p>
+    </head>
+
+    <!-- 
+<center><a href="#start"> Start Learing Origami</a></center>
+<center><a href="#fold"> Fold Easy Origami</a></center> -->
+
+
+    <!-- Categories Section -->
+    <section id="categories" class="container py-5">
+        <h2>Origami Categories</h2>
+        <div class="row">
+            <div class="col-md-3 category-card">
+                <section id="Faces" class="mt-5 py-4"></section>
+                <div class="card"><img src="https://origami.me/wp-content/uploads/2010/05/origami-cat-face-768x432.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Faces</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="animal" class="mt-5 py-4"></section>
+                <div class="card"><img src="https://origami.me/wp-content/uploads/2019/02/animals-featured-768x432.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5 id="animals">Animals</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Birds" class="mt-5 py-4"></section>
+                <div class="card"><img src="https://origami.me/wp-content/uploads/2018/04/origami-birds-768x432.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Birds</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Flowers" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fres.cloudinary.com%2Fgrow-me%2Fimage%2Ffetch%2Fc_fill%2Ch_300%2Cq_auto%2Cw_300%2Ff_auto%2Cfl_lossy%2Fhttps%253A%252F%252Forigami.me%252Fwp-content%252Fuploads%252F2025%252F02%252Feasy-origami-rose.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Flowers</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Boats" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="https://origami.me/wp-content/uploads/2010/05/traditional-origami-boat-768x432.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Boats</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Stars" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSilmVuFmZZLGeTdMCQQH0M87psPpptrkUFlQ&s"
+                        width="2%" height="200px" width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Stars</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Boxes" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="data:image/jpeg;base64,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"
+                        width="2%" height="200px" width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Boxes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Dragons" class="mt-5 py-4"></section>
+                <div class="card"><img src="https://origami.me/wp-content/uploads/2018/09/video-game-day-768x432.jpg"
+                        width="2%" height="200px" width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Dragons</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Insects" class="mt-5 py-4"></section>
+                <div class="card"><img src="https://origami.me/wp-content/uploads/2018/09/insects-768x432.jpg"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Insects</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Decor" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXZjjCtMmPvgnx4Wuj9KGXMqS7ve8a00tu9g&s"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Decor</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Object" class="mt-5 py-4"></section>
+                <div class="card"><img
+                        src="data:image/jpeg;base64,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"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Object</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 category-card">
+                <section id="Moon" class="mt-5 py-4"></section>
+                <div class="card"><img src="data:image/jpeg;base64,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"
+                        width="2%" height="200px" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Moon</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container py-5">
+        <h2>Gallery</h2>
+        <div class="row">
+            <div class="col-md-4"><img src="img/turtle.png"
+                    width="250px" height="300px">
+            </div>
+            <div class="col-md-4"><img src="img/crane.png"
+                    width="250px" height="300px"></div>
+            <div class="col-md-4"><img src="https://cdn-icons-png.flaticon.com/128/4799/4799310.png" width="250px"
+                    height="300px" class="img-fluid rounded mb-3" /></div>
+            <div class="col-md-4"><img src="https://cdn-icons-png.flaticon.com/128/3894/3894453.png" width="250px"
+                    height="300px"> </div>
+            <div class="col-md-4"><img src="https://cdn-icons-png.flaticon.com/128/2108/2108544.png" width="250px"
+                    height="300px"></div>
+            <div class="col-md-4"><img src="https://cdn-icons-png.flaticon.com/128/4065/4065958.png" width="250px"
+                    height="300px"></div>
+        </div>
+    </section>
+
+    <section id="about" class="container py-5">
+        <h2>About Origami</h2>
+        <p>*Origami* is the traditional Japanese art of paper folding, where intricate designs and shapes are created by
+            folding a single sheet of paper without cutting or gluing. Originating in Japan around the 17th century, it
+            has evolved into a popular craft and creative hobby worldwide. The word "origami" comes from "ori" (to fold)
+            and "kami" (paper). From simple paper cranes to complex 3D models, origami ranges from beginner-friendly
+            projects to advanced artistic creations. It not only enhances creativity and patience but also improves fine
+            motor skills and geometric understanding. Today, origami is used in education, therapy, and even
+            engineering, proving that this ancient art form remains relevant and inspiring. </p>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="container py-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3"><label>Name</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label>Email</label><input type="email" class="form-control"></div>
+            <div class="mb-3"><label>Message</label><textarea class="form-control"></textarea></div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback" class="container py-5">
+        <h2>Feedback</h2>
+        <form>
+            <div class="mb-3"><label>Your Experience</label><textarea class="form-control"></textarea></div>
+            <button type="submit" class="btn btn-success">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Add Bootstrap 5 CDN in your <head> if not already added -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Footer Starts Here -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+
+                <!-- Logo or Website Name -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h5 class="fw-bold text-uppercase">Origami</h5>
+                    <p>Connecting hearts across the distance with love, care, and memories.</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+                    <p><i class="bi bi-envelope me-2"></i> support@Origami.com</p>
+                    <p><i class="bi bi-telephone me-2"></i> +91 98765 43210</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-3 border-top pt-3">
+            <p class="mb-0">&copy; 2025 Origami. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+
+
+
+
+</body>
+
+</html>
